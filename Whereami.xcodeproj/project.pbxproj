@@ -62,10 +62,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBEE6E8B183A76CA00F10742 /* CoreLocation.framework in Frameworks */,
 				CBEE6E58183A763100F10742 /* CoreGraphics.framework in Frameworks */,
 				CBEE6E5A183A763100F10742 /* UIKit.framework in Frameworks */,
 				CBEE6E56183A763100F10742 /* Foundation.framework in Frameworks */,
+				CBEE6E8B183A76CA00F10742 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +465,7 @@
 				CBEE6E86183A763100F10742 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBEE6E87183A763100F10742 /* Build configuration list for PBXNativeTarget "WhereamiTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +474,7 @@
 				CBEE6E89183A763100F10742 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

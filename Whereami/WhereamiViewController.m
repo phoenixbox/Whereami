@@ -8,16 +8,14 @@
 
 #import "WhereamiViewController.h"
 
-@interface WhereamiViewController ()
-
-@end
-
 @implementation WhereamiViewController
 
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    if (self) {
-        locationManager = [[CLLocationManager alloc]init];
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
+    if(self) {
+        locationManager = [[CLLocationManager alloc] init];
         
         [locationManager setDelegate:self];
         
@@ -25,19 +23,20 @@
         
         [locationManager startUpdatingLocation];
     }
+    
     return self;
 }
 
 -(void) locationManager:(CLLocationManager *)manager
-      didUpdateLocation:(CLLocation *)oldLocation
-           fromLocation:(CLLocation *)newLocation
+    didUpdateToLocation:(CLLocation *)newLocation
+           fromLocation:(CLLocation *)oldLocation
 {
-    NSLog(@"%@", newLocation);
+    NSLog(@"%@", oldLocation);
 }
 
 -(void)locationManager:(CLLocationManager *)manager
       didFailWithError:(NSError *)error
 {
-    NSLog(@"Could not fidn location: %@", error);
+    NSLog(@"Could not find location: %@", error);
 }
 @end
