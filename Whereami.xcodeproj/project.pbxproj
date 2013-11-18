@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBBF332E183A9B460033A562 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBBF332D183A9B460033A562 /* MapKit.framework */; };
 		CBEE6E56183A763100F10742 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEE6E55183A763100F10742 /* Foundation.framework */; };
 		CBEE6E58183A763100F10742 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEE6E57183A763100F10742 /* CoreGraphics.framework */; };
 		CBEE6E5A183A763100F10742 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEE6E59183A763100F10742 /* UIKit.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CBBF332D183A9B460033A562 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CBEE6E52183A763100F10742 /* Whereami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whereami.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEE6E55183A763100F10742 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CBEE6E57183A763100F10742 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBBF332E183A9B460033A562 /* MapKit.framework in Frameworks */,
 				CBEE6E58183A763100F10742 /* CoreGraphics.framework in Frameworks */,
 				CBEE6E5A183A763100F10742 /* UIKit.framework in Frameworks */,
 				CBEE6E56183A763100F10742 /* Foundation.framework in Frameworks */,
@@ -104,6 +107,7 @@
 		CBEE6E54183A763100F10742 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CBBF332D183A9B460033A562 /* MapKit.framework */,
 				CBEE6E8A183A76CA00F10742 /* CoreLocation.framework */,
 				CBEE6E55183A763100F10742 /* Foundation.framework */,
 				CBEE6E57183A763100F10742 /* CoreGraphics.framework */,
