@@ -14,16 +14,17 @@
 
 @implementation WhereamiViewController
 
-- (void)viewDidLoad
+-(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    if (self) {
+        locationManager = [[CLLocationManager alloc]init];
+        
+        
+        
+        [locationManager setDesiredACCURACY:kCLLocationAccuracyBest];
+        
+        [locationManager startUpdatingLocation]
+    }
+    return self;
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 @end
