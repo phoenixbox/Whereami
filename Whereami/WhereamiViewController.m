@@ -19,8 +19,6 @@
         
         locationManager = [[CLLocationManager alloc] init];
         
-        [self doSomethingWeird];
-        
         [locationManager setDelegate:self];
         
         [locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
