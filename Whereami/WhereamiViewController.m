@@ -22,7 +22,6 @@
         
         [locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
         
-        [locationManager startUpdatingLocation];
     }
     return self;
 }
@@ -37,6 +36,11 @@
       didFailWithError:(NSError *)error
 {
     NSLog(@"Could not find location: %@", error);
+}
+
+- (void)viewDidLoad
+{
+    [worldView setShowsUserLocation:YES];
 }
 
 -(void)dealloc
