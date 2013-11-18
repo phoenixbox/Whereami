@@ -19,12 +19,25 @@
     if (self) {
         locationManager = [[CLLocationManager alloc]init];
         
+        [locationManager setDelegate:self];
         
+        [locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
         
-        [locationManager setDesiredACCURACY:kCLLocationAccuracyBest];
-        
-        [locationManager startUpdatingLocation]
+        [locationManager startUpdatingLocation];
     }
     return self;
+}
+
+-(void) locationManager:(CLLocationManager *)manager
+      didUpdateLocation:(CLLocation *)oldLocation
+           fromLocation:(CLLocation *)newLocation
+{
+    NSLog(@"%@", newLocation);
+}
+
+-(void)locationManager:(CLLocationManager *)manager
+      didFailWithError:(NSError *)error
+{
+    NSLog(@"Could not fidn location: %@", error);
 }
 @end
