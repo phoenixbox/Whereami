@@ -11,11 +11,15 @@
 @implementation WhereamiViewController
 
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     
     if(self) {
+        
         locationManager = [[CLLocationManager alloc] init];
+        
+        [self doSomethingWeird];
         
         [locationManager setDelegate:self];
         
@@ -38,6 +42,13 @@
       didFailWithError:(NSError *)error
 {
     NSLog(@"Could not find location: %@", error);
+}
+
+-(void)doSomethingWeird
+{
+    NSLog(@"Log 1");
+    NSLog(@"Log 2");
+    NSLog(@"Log 3");
 }
 
 -(void)dealloc
