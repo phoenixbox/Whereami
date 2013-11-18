@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CBBF332E183A9B460033A562 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBBF332D183A9B460033A562 /* MapKit.framework */; };
+		CBBF3333183AB6C30033A562 /* BNRMapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBF3332183AB6C30033A562 /* BNRMapPoint.m */; };
 		CBEE6E56183A763100F10742 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEE6E55183A763100F10742 /* Foundation.framework */; };
 		CBEE6E58183A763100F10742 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEE6E57183A763100F10742 /* CoreGraphics.framework */; };
 		CBEE6E5A183A763100F10742 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEE6E59183A763100F10742 /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		CBBF332D183A9B460033A562 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CBBF3331183AB6C30033A562 /* BNRMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRMapPoint.h; sourceTree = "<group>"; };
+		CBBF3332183AB6C30033A562 /* BNRMapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRMapPoint.m; sourceTree = "<group>"; };
 		CBEE6E52183A763100F10742 /* Whereami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whereami.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEE6E55183A763100F10742 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CBEE6E57183A763100F10742 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -125,6 +128,8 @@
 				CBEE6E67183A763100F10742 /* Main.storyboard */,
 				CBEE6E6A183A763100F10742 /* WhereamiViewController.h */,
 				CBEE6E6B183A763100F10742 /* WhereamiViewController.m */,
+				CBBF3331183AB6C30033A562 /* BNRMapPoint.h */,
+				CBBF3332183AB6C30033A562 /* BNRMapPoint.m */,
 				CBEE6E6D183A763100F10742 /* Images.xcassets */,
 				CBEE6E5C183A763100F10742 /* Supporting Files */,
 			);
@@ -260,6 +265,7 @@
 			files = (
 				CBEE6E66183A763100F10742 /* WhereamiAppDelegate.m in Sources */,
 				CBEE6E62183A763100F10742 /* main.m in Sources */,
+				CBBF3333183AB6C30033A562 /* BNRMapPoint.m in Sources */,
 				CBEE6E6C183A763100F10742 /* WhereamiViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
