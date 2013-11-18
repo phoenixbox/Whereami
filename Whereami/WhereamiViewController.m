@@ -10,8 +10,7 @@
 
 @implementation WhereamiViewController
 
--(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     
@@ -25,15 +24,13 @@
         
         [locationManager startUpdatingLocation];
     }
-    
     return self;
 }
-
 -(void) locationManager:(CLLocationManager *)manager
     didUpdateToLocation:(CLLocation *)newLocation
            fromLocation:(CLLocation *)oldLocation
 {
-    NSLog(@"%@", oldLocation);
+    NSLog(@"%@", newLocation);
 }
 
 -(void)locationManager:(CLLocationManager *)manager
