@@ -78,7 +78,7 @@
 
 - (void)foundLocation:(CLLocation *)loc
 {
-    CLLOcationCoordinate2D coord = [loc coordinate];
+    CLLocationCoordinate2D coord = [loc coordinate];
     
     BNRMapPoint *mp = [[BNRMapPoint alloc] initWithCoordinate:coord
                                                         title:[locationTitleField text]];
