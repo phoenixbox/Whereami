@@ -9,8 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface WhereamiViewController : UIViewController
-    <CLLocationManagerDelegate>
+@interface WhereamiViewController : UIViewController <CLLocationManagerDelegate>
 {
     CLLocationManager *locationManager;
 }
